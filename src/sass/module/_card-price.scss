@@ -1,0 +1,20 @@
+@use "global" as *;
+.card__price-after {
+  display: inline-block;
+  font-family: $third-font-family;
+  font-size: rem(40);
+  font-weight: $bold;
+  color: $green;
+}
+.card__price-before {
+  display: inline-block;
+  font-family: $third-font-family;
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $black;
+  text-decoration: line-through $red;
+}
+.card__price-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}

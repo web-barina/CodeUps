@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.footer {
+  padding: rem(80) 0;
+  background-color: $green;
+  color: $white;
+}

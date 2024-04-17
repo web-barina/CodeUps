@@ -1,0 +1,13 @@
+@use "global" as *;
+.voice-section {
+  padding: rem(70) 0 rem(140) 0;
+}
+
+@include mq("md") {
+  .voice-section {
+    background-image: url(../..//assets/images/common/voice-fish.svg),
+      url(../..//assets/images/common/voice-tatsu.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+}

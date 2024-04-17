@@ -1,0 +1,16 @@
+@use "global" as *;
+.about-us-back-sp {
+  margin: rem(24) 0 rem(40) 0;
+  padding: rem(106) 0;
+  background-image: url(../..//assets/images/common/about-us-left1.png),
+    url(../..//assets/images/common/about-us-right.png);
+
+  background-position: 3% top, 97% bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 37% auto, 80% auto;
+}
+@include mq("md") {
+  .about-us-back-sp {
+    display: none;
+  }
+}

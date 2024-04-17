@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.contact-contents-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  box-shadow: none;
+}
+
+@include mq("md") {
+  .contact-contents-wrapper {
+    flex-direction: row;
+    position: relative;
+    padding: rem(80) rem(112) rem(80) rem(50);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: rem(2) rem(2) rem(10) rgba($color: #000000, $alpha: 0.25);
+  }
+}

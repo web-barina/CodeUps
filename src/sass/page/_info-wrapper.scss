@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(24);
+  row-gap: rem(24);
+  align-items: center;
+}
+
+@include mq("md") {
+  .info-wrapper {
+    flex-direction: row;
+    margin-top: rem(40);
+  }
+}

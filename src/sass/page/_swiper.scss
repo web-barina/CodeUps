@@ -1,0 +1,9 @@
+@use "global" as *;
+@include mq("md") {
+  .swiper-button-prev:after {
+    content: url(../..//assets/images/common/slider-left-arrow.svg);
+  }
+  .swiper-button-next:after {
+    content: url(../..//assets/images/common/slider-right-arrow.svg);
+  }
+}

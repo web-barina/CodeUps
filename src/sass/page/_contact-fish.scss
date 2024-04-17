@@ -1,0 +1,9 @@
+@use "global" as *;
+@include mq("md") {
+  .contact-fish {
+    position: absolute;
+    width: 25%;
+    right: 0;
+    margin-top: rem(-40);
+  }
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+.price-img {
+  width: 100%;
+}
+
+@include mq("md") {
+  .price-menus {
+    width: 50%;
+  }
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.header__inner {
+  max-width: rem(1360);
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+  padding: rem(20) rem(15);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.content-main-title {
+  font-weight: $bold;
+  position: relative;
+}
+.content-main-title::before {
+  background-image: url(../../assets/images/common/star-fish.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: rem(18);
+  height: rem(18);
+  content: "";
+  position: absolute;
+  top: rem(4);
+  left: -10%;
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: rem(40);
+}

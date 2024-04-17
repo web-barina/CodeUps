@@ -1,0 +1,61 @@
+@use "global" as *;
+
+/*リンクの形状*/
+#scroll a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  width: rem(48);
+  height: rem(48);
+  border-radius: 50%;
+  border: solid rem(1) $green;
+  align-items: center;
+}
+@include mq("md") {
+  #scroll a {
+    width: rem(80);
+    height: rem(80);
+  }
+}
+/*リンクを右下に固定*/
+#scroll {
+  position: fixed;
+  right: rem(20);
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY rem(100);
+}
+
+/*上に上がる動き*/
+
+#scroll.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY rem(100);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*下に下がる動き*/
+
+#scroll.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY rem(100);
+  }
+}

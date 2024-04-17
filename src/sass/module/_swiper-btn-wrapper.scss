@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.swiper-btn-wrapper {
+  display: none;
+}
+@include mq("md") {
+  .swiper-btn-wrapper {
+    position: absolute;
+    display: grid;
+    width: rem(240);
+    height: rem(80);
+    grid-template-columns: 1fr 1fr;
+    column-gap: rem(80);
+    right: 10.5%;
+    top: 12%;
+  }
+}

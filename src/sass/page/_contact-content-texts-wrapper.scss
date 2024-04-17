@@ -1,0 +1,16 @@
+@use "global" as *;
+.contact-content-texts-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@include mq("md") {
+  .contact-content-texts-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: solid rem(1) $green;
+    padding: rem(24) 0 0 0;
+  }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+.info__texts {
+  width: 100%;
+  align-content: center;
+}
+@include mq("md") {
+  .info__texts {
+    margin-left: rem(48);
+    width: calc(50% - rem(48));
+  }
+}

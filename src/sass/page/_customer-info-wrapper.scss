@@ -1,0 +1,7 @@
+@use "global" as *;
+.customer-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}

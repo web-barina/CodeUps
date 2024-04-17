@@ -1,0 +1,12 @@
+@use "global" as *;
+.logo {
+  width: rem(120);
+}
+.logo-another-size {
+  width: rem(174);
+}
+@include mq("md") {
+  .logo-another-size {
+    width: rem(200);
+  }
+}

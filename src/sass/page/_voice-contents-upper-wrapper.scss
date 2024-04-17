@@ -1,0 +1,8 @@
+@use "global" as *;
+.voice-contents-upper-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: rem(24);
+  align-items: end;
+  column-gap: rem(16);
+}

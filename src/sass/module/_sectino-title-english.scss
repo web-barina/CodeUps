@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.section-title-english {
+  font-family: $second-font-family;
+  font-size: rem(40);
+  list-style: 1;
+}
+.section-title-english span {
+  color: $green;
+}
+.section-title-english--header {
+  font-size: rem(18);
+  color: $white;
+}
+.section-title-english--another-size {
+  font-size: rem(80);
+}
+@include mq("md") {
+  .section-title-english-another-color,
+  .section-title-english-another-color span {
+    color: $white;
+  }
+}

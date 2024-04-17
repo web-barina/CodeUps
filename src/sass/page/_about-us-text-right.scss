@@ -1,0 +1,14 @@
+@use "global" as *;
+.about-us-text-right {
+  width: 100%;
+  font-family: $second-font-family;
+  color: $black;
+  font-size: rem(16);
+  line-height: 1.5;
+}
+@include mq("md") {
+  .about-us-text-right {
+    width: 50%;
+    color: $white;
+  }
+}

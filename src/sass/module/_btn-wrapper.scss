@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: rem(80);
+}
+.btn-wrapper--another-margin {
+  margin-top: rem(40);
+}

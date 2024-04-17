@@ -1,0 +1,24 @@
+@use "global" as *;
+.price-menus {
+  width: 100%;
+}
+.price-menus dl {
+  margin-top: rem(40);
+}
+.price-menus :first-child {
+  margin-top: 0;
+}
+.price-menus dd {
+  margin-top: rem(8);
+  font-size: rem(14);
+}
+.price-menus dt {
+  margin-top: rem(8);
+}
+
+@include mq("md") {
+  .price-menus {
+    width: 50%;
+    font-size: rem(16);
+  }
+}

@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.price-section {
+  padding: rem(100) 0;
+  background-color: $light-green;
+}
+@include mq("md") {
+  .price-section {
+    background-image: url(../..//assets/images/common/price-fish.svg);
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+    background-position: left bottom;
+  }
+}

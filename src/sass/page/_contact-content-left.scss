@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.contact-content-left {
+  row-gap: rem(24);
+  align-items: center;
+}
+
+@include mq("md") {
+  .contact-content-left {
+    align-items: center;
+  }
+}

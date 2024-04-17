@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.section-title-japanese {
+  font-weight: $regular;
+  font-size: rem(12);
+  color: $green;
+  list-style: 1;
+}
+
+.section-title-japanese--header {
+  font-size: rem(10);
+  color: $white;
+}
+
+.section-title-japanese-another-color {
+  color: $white;
+}

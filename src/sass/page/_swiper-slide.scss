@@ -1,0 +1,8 @@
+@use "global" as *;
+.swiper-slide {
+  box-shadow: rem(2) rem(2) rem(10) rgba($color: #000000, $alpha: 0.25);
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+}

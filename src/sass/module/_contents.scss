@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.contents--header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $white;
+  background-color: $green;
+  z-index: 10;
+}
+
+@include mq("md") {
+  .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .contents--header {
+    display: none;
+  }
+}

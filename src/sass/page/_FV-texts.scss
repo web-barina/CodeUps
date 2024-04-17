@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.FV-texts {
+  align-items: center;
+  color: $white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 20;
+}

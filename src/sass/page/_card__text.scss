@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.card__text {
+  margin-top: rem(15);
+  font-size: rem(16);
+  line-height: 1.5;
+}

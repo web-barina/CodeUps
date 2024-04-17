@@ -1,0 +1,22 @@
+@use "global" as *;
+.swiper-button-prev {
+  display: none;
+}
+@include mq("md") {
+  .swiper-button-prev {
+    position: inherit !important;
+    width: rem(80) !important;
+    height: rem(80) !important;
+    margin: 0;
+    content: url(../../assets/images/common/slider-left-arrow.svg);
+    display: block;
+  }
+  .swiper-button-prev ::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: rem(80);
+    margin: auto;
+    width: rem(80);
+  }
+}

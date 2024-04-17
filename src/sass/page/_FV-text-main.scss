@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.FV-text-main {
+  font-size: rem(40);
+  font-family: $third-font-family;
+  letter-spacing: 0.54em;
+}
+
+@include mq("md") {
+  .FV-text-main {
+    font-size: rem(80);
+  }
+}

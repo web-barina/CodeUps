@@ -1,0 +1,14 @@
+@use "global" as *;
+
+@include mq("md") {
+  .about-us-back-pc {
+    width: 100%;
+    margin-top: rem(40);
+    padding: rem(200) 0 rem(219) 0;
+    background-image: url(../..//assets/images/common/about-us-left1.png),
+      url(../..//assets/images/common/about-us-right.png);
+    background-position: 2% top, 96% 104%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 36% auto, 80% auto;
+  }
+}

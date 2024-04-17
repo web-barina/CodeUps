@@ -1,0 +1,10 @@
+@use "global" as *;
+.info__img {
+  width: 100%;
+}
+
+@include mq("md") {
+  .info__img {
+    width: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.header-menu {
+  display: none;
+}
+@include mq("md") {
+  .header-menu {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: rem(40);
+  }
+  .header-menu li a {
+    position: relative;
+  }
+
+  .header-menu li.current a,
+  .header-menu li a:hover {
+    color: $white;
+  }
+
+  .header-menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: rem(1);
+    background: $white;
+    transition: all 0.3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+  }
+
+  .header-menu li.current a::after,
+  .header-menu li a:hover::after {
+    transform: scale(1, 1);
+  }
+}

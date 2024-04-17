@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.blog-section {
+  padding: rem(80) 0 rem(40) 0;
+}
+@include mq("md") {
+  .blog-section {
+    padding: rem(100) 0 rem(70) 0;
+    background-image: url(../../assets/images/common/blog-fish.png),
+      url(../../assets/images/common/blog-back.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 9.5% 5%, top;
+    background-size: 30.5% auto, contain;
+  }
+}

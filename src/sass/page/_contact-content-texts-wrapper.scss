@@ -9,7 +9,8 @@
   .contact-content-texts-wrapper {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    column-gap: rem(24);
+    text-align: left;
     border-top: solid rem(1) $green;
     padding: rem(24) 0 0 0;
   }

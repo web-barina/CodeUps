@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.sns-logo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  column-gap: rem(16);
+  margin-left: 0;
+}
+
+@include mq("md") {
+  .sns-logo-wrapper {
+    margin-left: rem(40);
+    padding-bottom: rem(5);
+  }
+}

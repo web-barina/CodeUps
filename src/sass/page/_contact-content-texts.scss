@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.contact-content-texts {
+  width: 100%;
+}
+
+@include mq("md") {
+  .contact-content-texts {
+    width: 33.563%;
+  }
+}

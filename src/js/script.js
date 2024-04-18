@@ -1,9 +1,8 @@
 jQuery(function ($) {
   //ハンバーガーメニュー
-  $(function () {
-    $("#btn02").on("click", function () {
-      $(this).toggleClass("active");
-      return false;
+  $(document).ready(function () {
+    $("#header__drawer").on("click", function () {
+      $("#header-menu-sp").slideToggle();
     });
   }); //ハンバーガーメニュー閉じタグ
 

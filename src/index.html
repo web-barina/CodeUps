@@ -49,13 +49,51 @@
 <!-- ヘッダー -->
 <header class="header" id="header">
   <div class="header__inner">
-    <h1 class="logo">
+    <h1 class="logo logo--another-size">
       <a href="#">
             <img src="./assets/images/common/CodeUps-logo.svg" alt="ヘッダーロゴ">
       </a>
     </h1>
-    <div class="btn-trigger" id="btn02"><span></span><span></span><span></span></div>
-    <ul class="header-menu">
+  <div class="header__drawer" id="header__drawer"><span></span><span></span><span></span></div>
+  <nav class="header-menu-sp" id="header-menu-sp">
+    <div class="contents">
+      <ul class="content">
+        <li class="content-main-title">キャンペーン</li>
+          <ul class="content-sub">
+            <li>ライセンス取得</li>
+            <li>貸し切り体験ダイビング</li>
+            <li>ナイトダイビング</li>
+          </ul>
+        <li class="content-main-title">私たちについて</li>
+      </ul>
+      <ul class="content">
+        <li class="content-main-title">ダイビング情報</li>
+        <ul class="content-sub">
+            <li>ライセンス講習</li>
+            <li>体験ダイビング</li>
+            <li>ファンダイビング</li>
+          </ul>
+        <li class="content-main-title">ブログ</li>
+      </ul>
+      <ul class="content">
+        <li class="content-main-title">お客様の声</li>
+        <li class="content-main-title">料金一覧</li>
+        <ul class="content-sub">
+            <li>ライセンス講習</li>
+            <li>体験ダイビング</li>
+            <li>ファンダイビング</li>
+          </ul>
+      </ul>
+      <ul class="content">
+        <li class="content-main-title">よくある質問</li>
+        <li class="content-main-title">プライバシーポリシー</li>
+        <li class="content-main-title">利用規約</li>
+        <li class="content-main-title">お問い合わせ</li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="header-menu-pc">
+    <ul>
       <li><a href="#">
         <div class="section-title-wrapper">
           <p class="section-title-english section-title-english--header">Campaign</p>
@@ -113,45 +151,8 @@
       </a>
       </li>
     </ul>
-  </div>
-  <div class="contents contents--header">
-    <ul class="content">
-      <li class="content-main-title">キャンペーン</li>
-        <ul class="content-sub">
-          <li>ライセンス取得</li>
-          <li>貸し切り体験ダイビング</li>
-          <li>ナイトダイビング</li>
-        </ul>
-      </li>
-      <li class="content-main-title">私たちについて</li>
-    </ul>
-    <ul class="content">
-      <li class="content-main-title">ダイビング情報</li>
-      <ul class="content-sub">
-          <li>ライセンス講習</li>
-          <li>体験ダイビング</li>
-          <li>ファンダイビング</li>
-        </ul>
-      </li>
-      <li class="content-main-title">ブログ</li>
-    </ul>
-    <ul class="content">
-      <li class="content-main-title">お客様の声</li>
-      <li class="content-main-title">料金一覧</li>
-      <ul class="content-sub">
-          <li>ライセンス講習</li>
-          <li>体験ダイビング</li>
-          <li>ファンダイビング</li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="content">
-      <li class="content-main-title">よくある質問</li>
-      <li class="content-main-title">プライバシーポリシー</li>
-      <li class="content-main-title">利用規約</li>
-      <li class="content-main-title">お問い合わせ</li>
-    </ul>
-  </div>
+  </nav>
+</div>
 </header>
   <!--ファーストビュー-->
   
@@ -197,8 +198,8 @@
           <div class="card__content-wrapper">
             <div class="category">ライセンス講習</div>
             <p class="title">ライセンス取得</p>
-            <div class="card__price-wrapper">
               <p class="card__price-text">全部コミコミ(お一人様)</p>
+              <div class="card__price-wrapper">
               <p class="card__price-before">¥56,000</p>
               <p class="card__price-after">¥46,000</p>
             </div>
@@ -211,8 +212,8 @@
           <div class="card__content-wrapper">
             <div class="category">体験ダイビング</div>
             <p class="title">貸切体験ダイビング</p>
-            <div class="card__price-wrapper">
               <p class="card__price-text">全部コミコミ(お一人様)</p>
+              <div class="card__price-wrapper">
               <p class="card__price-before">¥24,000</p>
               <p class="card__price-after">¥18,000</p>
             </div>
@@ -225,8 +226,8 @@
           <div class="card__content-wrapper">
             <div class="category">体験ダイビング</div>
             <p class="title">ナイトダイビング</p>
-            <div class="card__price-wrapper">
               <p class="card__price-text">全部コミコミ(お一人様)</p>
+              <div class="card__price-wrapper">
               <p class="card__price-before">¥10,000</p>
               <p class="card__price-after">¥8,000</p>
             </div>
@@ -239,8 +240,8 @@
           <div class="card__content-wrapper">
             <div class="category">ファンダイビング</div>
             <p class="title">貸切ファンダイビング</p>
-            <div class="card__price-wrapper">
               <p class="card__price-text">全部コミコミ(お一人様)</p>
+              <div class="card__price-wrapper">
               <p class="card__price-before">¥20,000</p>
               <p class="card__price-after">¥16,000</p>
             </div>
@@ -249,8 +250,7 @@
       </div>
         <div class="btn-wrapper">
           <a href="#" class="btn">View more
-            <div class="btn-arrow">
-          </div>
+            <div class="btn-arrrow"><img src="./assets/images/common/btn-arrow.svg" alt="ボタン矢印"></div>              
           </a>
         </div>
   </div>
@@ -272,12 +272,12 @@
         <div class="about-us-text-right">
           ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
           ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-            <div class="btn-wrapper btn-wrapper--another-margin">
-              <a href="#" class="btn">View more
-                <div class="btn-arrow">
-                  </div>
-              </a>
-            </div>
+          <div class="btn-wrapper">
+            <a href="#" class="btn">View more
+              <div class="btn-arrow">
+        </div>
+            </a>
+          </div>
         </div>          
       </div>
       <div class="about-us-decoration"><img src="./assets/images/common/about-us-sango.png" alt="珊瑚の絵"></div>  
@@ -299,6 +299,8 @@
             正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
             <div class="btn-wrapper">
               <a href="#" class="btn">View more
+                <div class="btn-arrow">
+          </div>
               </a>
             </div>
         </div>
@@ -416,8 +418,6 @@
         </div>        
       </div>
     </div>
-          </div>
-        </div>        
       </div> 
     </div> 
     </div>
@@ -485,19 +485,17 @@
       <div class="contact-fish"><img src="./assets/images/common/_contact-fish.png" alt="キンギョハナダイ"></div>
 <div class="contact-contents-wrapper">
   <div class="contact-content-left">
-    <h1 class="logo logo-another-size">
-      <a href="#">
+    <h1 class="logo">
             <img src="./assets/images/common/contact-CodeUps.png" alt="ロゴ">
-      </a>
     </h1>
     <div class="contact-content-texts-wrapper">
     <div class="contact-content-texts">
-    <p class="">沖縄県那覇市1-1</p>
+    <p class=>沖縄県那覇市1-1</p>
       <p>TEL:0120-000-0000</p>
       <p>営業時間:8:30-19:00</p>
       <p>定休日:毎週火曜日</p>
     </div>
-    <div class="google-map"><img src="./assets/images/common/map.png" alt="地図"></div>
+    <div class="contact-content-google-map"><img src="./assets/images/common/map.png" alt="地図"></div>
   </div>
 </div>
   <div class="contact-content-right">
@@ -505,7 +503,7 @@
     <p class="section-title-english section-title-english--another-size"><span>C</span>ontact</p>
     <h2 class="section-title-japanese">お問い合わせ</h2>
   </div>
-  <p class=>ご予約・お問い合わせはコチラ</p>
+  <p class="contact-content-right-text">ご予約・お問い合わせはコチラ</p>
   <div class="btn-wrapper">
     <a href="#" class="btn">Contact us
       <div class="btn-arrow"></div>
@@ -541,7 +539,6 @@
                 <li>貸し切り体験ダイビング</li>
                 <li>ナイトダイビング</li>
               </ul>
-            </li>
             <li class="content-main-title">私たちについて</li>
           </ul>
           <ul class="content">
@@ -551,7 +548,6 @@
                 <li>体験ダイビング</li>
                 <li>ファンダイビング</li>
               </ul>
-            </li>
             <li class="content-main-title">ブログ</li>
           </ul>
           <ul class="content">
@@ -562,7 +558,6 @@
                 <li>体験ダイビング</li>
                 <li>ファンダイビング</li>
               </ul>
-            </li>
           </ul>
           <ul class="content">
             <li class="content-main-title">よくある質問</li>

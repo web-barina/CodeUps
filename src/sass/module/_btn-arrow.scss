@@ -1,4 +1,4 @@
-/*@use "global" as *;
+@use "global" as *;
 
 .btn-arrow {
   display: inline-block;
@@ -13,13 +13,3 @@
   left: 0;
   position: absolute;
 }
-/* 2枚目の画像は最初透明 
-.btn-arrow img:last-of-type {
-  opacity: 0;
-  transition: opacity 0.7s;
-}
-/* hoverすると2枚目の画像が透明じゃなくなる 
-.btn-arrow:hover img {
-  opacity: 1;
-}
-*/

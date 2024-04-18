@@ -1,4 +1,8 @@
 @use "global" as *;
 
-.contents-sub li {
+.content-sub {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: rem(24);
+  line-height: 1.125;
 }

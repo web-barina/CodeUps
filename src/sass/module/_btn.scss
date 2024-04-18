@@ -26,23 +26,7 @@
 .btn:hover {
   background: $white;
   color: $green;
+  fill: $green;
   border: solid rem(1) $green;
   transition: all 0.5s ease 0s;
-}
-
-.btn-arrow img {
-  display: inline-block;
-  width: rem(40);
-  height: auto;
-  left: 0;
-  position: absolute;
-}
-/* 2枚目の画像は最初透明 */
-.btn-arrow img:last-of-type {
-  opacity: 0;
-  transition: opacity 0.7s;
-}
-/* hoverすると2枚目の画像が透明じゃなくなる */
-.btn-arrow:hover img {
-  opacity: 1;
 }

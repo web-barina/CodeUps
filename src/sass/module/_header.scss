@@ -6,7 +6,12 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: auto;
+  height: rem(80);
   background: rgba($color: $black, $alpha: 0.68);
   z-index: 9999;
+}
+@include mq("md") {
+  .header {
+    height: rem(90);
+  }
 }

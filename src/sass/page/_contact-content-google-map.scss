@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.contact-content-google-map {
+  width: 100%;
+}
+@include mq("md") {
+  .contact-content-google-map {
+    width: 62.758%;
+  }
+}

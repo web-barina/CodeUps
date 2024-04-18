@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.header-menu-sp {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $white;
+  background-color: $green;
+  z-index: 10;
+}
+@include mq("md") {
+  .header-menu-sp {
+    display: none;
+  }
+}

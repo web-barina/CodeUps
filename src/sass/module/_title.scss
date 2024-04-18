@@ -3,7 +3,10 @@
 .title {
   font-size: rem(16);
   font-weight: $bold;
+  margin: rem(4) 0 0 0;
+  padding: 0 0 rem(8) 0;
   border-bottom: solid rem(1) $green;
+  line-height: 1.5;
 }
 .title--another-size {
   font-size: rem(24);

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.cards-wrapper {
+  width: 100%;
+  margin: rem(40) auto rem(40) auto;
+}
+@include mq("md") {
+  .cards-wrapper {
+    width: 100%;
+    max-width: rem(1080);
+    margin: rem(40) auto rem(80) auto;
+  }
+}

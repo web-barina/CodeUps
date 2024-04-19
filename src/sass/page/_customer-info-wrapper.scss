@@ -1,7 +1,15 @@
 @use "global" as *;
 .customer-info-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+@include mq("md") {
+  .customer-info-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

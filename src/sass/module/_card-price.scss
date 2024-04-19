@@ -10,7 +10,7 @@
   margin: rem(8) 0 0 0;
   display: inline-block;
   font-family: $third-font-family;
-  font-size: rem(40);
+  font-size: rem(32);
   font-weight: $bold;
   color: $green;
   line-height: 1;
@@ -26,4 +26,10 @@
 .card__price-text {
   margin-top: rem(16);
   padding: 0 rem(73) 0 rem(57);
+}
+
+@include mq("md") {
+  .card__price-after {
+    font-size: rem(40);
+  }
 }

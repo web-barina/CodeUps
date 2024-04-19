@@ -1,10 +1,16 @@
 jQuery(function ($) {
   //ハンバーガーメニュー
-  $(document).ready(function () {
-    $("#header__drawer").on("click", function () {
-      $("#header-menu-sp").slideToggle();
-    });
-  }); //ハンバーガーメニュー閉じタグ
+  $("#header__drawer").on("click", function () {
+    if ($("#header__drawer").hasClass("is-open")) {
+      $("#header-menu-sp").fadeOut();
+      $(this).removeClass("is-open");
+    } else {
+      $("#header-menu-sp").fadeIn();
+      $(this).addClass("is-open");
+    }
+  });
+
+  //ハンバーガーメニュー閉じタグ
 
   //ファーストビュースライダー
   const FVswiper = new Swiper("#FVswiper", {

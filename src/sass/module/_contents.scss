@@ -1,9 +1,8 @@
 @use "global" as *;
 
 .contents {
-  display: block;
   display: grid;
-  margin-top: rem(40);
+  margin: rem(40) 0 0 rem(18);
   row-gap: rem(40);
   grid-template-columns: 1fr 1fr;
   justify-content: center;

@@ -4,7 +4,8 @@
   font-weight: $regular;
   font-size: rem(12);
   color: $green;
-  list-style: 1;
+  line-height: 1;
+  margin-top: rem(4);
 }
 
 .section-title-japanese--header {
@@ -14,4 +15,10 @@
 
 .section-title-japanese-another-color {
   color: $white;
+}
+
+@include mq("md") {
+  .section-title-japanese {
+    margin-top: rem(8);
+  }
 }
